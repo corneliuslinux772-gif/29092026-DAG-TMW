@@ -1,0 +1,35 @@
+cat > .gitignore <<'EOF'
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Data
+data/raw/*
+data/processed/*
+data/quarantine/*
+
+# PostgreSQL
+*.sql.gz
+
+# dbt
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
+
+# Airflow
+airflow/logs/
+airflow/.airflow/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+EOF
