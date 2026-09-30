@@ -7,7 +7,9 @@ authors = [
     { name = "corneliuslinux772-gif", email = "corneliuslinux772@gmail.com" }
 ]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "pytest>=9.1.1",
+]
 
 [project.scripts]
 29092026-dag-tmw = "29092026_dag_tmw:main"

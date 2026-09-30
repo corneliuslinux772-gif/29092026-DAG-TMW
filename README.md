@@ -111,3 +111,21 @@ Pipeline de dados da plataforma TeoMeWhy.
 - Great Expectations
 - Airflow
 
+## Fases do DAG
+
+                  FASE 1 — SOURCE DISCOVERY
+                        ↓
+                  database.db
+                        ↓
+                  profiling exploratório
+                        ↓
+                  FASE 2 — SOURCE VALIDATION  ← estamos aqui
+                        ↓
+                  código versionado
+                        ↓
+                  commit
+                        ↓
+                  FASE 3 — INGESTION
+                        ↓
+                  PostgreSQL RAW
+
