@@ -129,3 +129,23 @@ Pipeline de dados da plataforma TeoMeWhy.
                         ↓
                   PostgreSQL RAW
 
+
+## Testes do módulo de Ingestão
+
+                 incoming/
+                    │
+                    ▼
+             source_validator
+                    │
+              ┌─────┴─────┐
+              │           │
+             PASS        FAIL
+              │           │
+              ▼           ▼
+      source_promotion  source_quarantine
+              │
+              ▼
+             source/
+              │
+              ▼
+             RAW

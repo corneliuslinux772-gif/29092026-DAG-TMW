@@ -8,11 +8,15 @@ authors = [
 ]
 requires-python = ">=3.11"
 dependencies = [
+    "psycopg[binary]>=3.3.6",
     "pytest>=9.1.1",
 ]
 
 [project.scripts]
 29092026-dag-tmw = "29092026_dag_tmw:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
 
 [build-system]
 requires = ["uv_build>=0.12.18,<0.13.0"]
